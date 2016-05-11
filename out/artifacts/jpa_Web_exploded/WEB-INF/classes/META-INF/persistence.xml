@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="Eclipselink_JPA">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+
+        <class>ma.ensa.Model.Entity.Admin</class>
+        <class>ma.ensa.Model.Entity.Chapitre</class>
+        <class>ma.ensa.Model.Entity.Category</class>
+        <class>ma.ensa.Model.Entity.Cours</class>
+        <class>ma.ensa.Model.Entity.Formateur</class>
+        <class>ma.ensa.Model.Entity.Utilisateur</class>
+
+        <properties>
+            <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3306/jee"/>
+            <property name="eclipselink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="eclipselink.jdbc.user" value="root"/>
+            <property name="eclipselink.jdbc.password" value="1234"/>
+            <!-- <property name="eclipselink.ddl-generation" value="create-tables-create"/>
+            <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>-->
+        </properties>
+    </persistence-unit>
+</persistence>
